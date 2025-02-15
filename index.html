@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- FONT CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <title>index</title>
+</head>
+
+<body>
+
+    <!-- BEGINING OF HEADER  -->
+    <header class="border-b w-100 sticky top-0 bg-white z-50">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8">
+                    <li><a href="./index.html" class="nav-link active text-sm font-medium">Home</a></li>
+                    <li><a href="./about.html" class="nav-link text-sm font-medium">About Us</a></li>
+                    <li class="dropdown relative">
+                        <a href="./Service.html" class="nav-link text-sm font-medium flex items-center  p-0">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content mt-2 py-2 border border-gray-200">
+                            <a href="/services/eye-examination" class="block px-4 py-2 text-sm hover:bg-gray-100">Eye
+                                Examination</a>
+                            <a href="/services/contact-lens" class="block px-4 py-2 text-sm hover:bg-gray-100">Contact
+                                Lens Fitting</a>
+                            <a href="/services/vision-therapy" class="block px-4 py-2 text-sm hover:bg-gray-100">Vision
+                                Therapy</a>
+                        </div>
+                    </li>
+                    <li><a href="./Blog.html" class="nav-link text-sm font-medium">Blogs</a></li>
+                    <li><a href="./contactUs.html" class="nav-link text-sm font-medium">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Book Appointment Button -->
+            <a href="./bookAppointment.html"
+                class=" bg-[#017CC7] hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327" stroke="#1C2434"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-1">
+                <a href="./index.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
+                <a href="./about.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About Us</a>
+                <a href="./Service.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                <a href="./Blog.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
+                <a href="./contactUs.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                <a href="./bookAppointment.html"
+                    class=" bg-[#017CC7] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+
+    <!-- BEGINING OF HERO SECTION  -->
+    <section>
+        <div class="relative min-h-auto w-full overflow-hidden hero-section ">
+            <!-- Decorative Elements -->
+            <div class="absolute top-8 right-1/4 w-6 h-6 text-blue-500">
+                <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
+                    <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="absolute top-20 right-1/3 w-4 h-4 rounded-full border-2 border-blue-500"></div>
+
+            <!-- Main Content -->
+            <div class="container mx-auto px-4 py-12 md:py-16">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Text Content -->
+                    <div class="max-w-xl space-y-6 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                            <span class="text-blue-500">Contract</span>
+                            <br class="hidden md:block" />
+                            Consultation is
+                            <br class="hidden md:block" />
+                            just a <span class="inline-flex items-center">'Hi'<span class="ml-2">👋</span></span>
+                            away.
+                        </h1>
+                        <p class="text-gray-600 text-lg md:text-xl">
+                            Contact us now and reach out your doctor. Lorem ipsum has been the industry's standard dummy
+                            text ever.
+                        </p>
+                        <button
+                            class="bg-blue-500 text-white px-8 py-3 rounded-md hover:bg-blue-600 transition-colors duration-200 text-lg font-medium">
+                            Contact Now
+                        </button>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="relative h-[300px] md:h-[400px] lg:h-[500px]">
+                        <img src="./Image/BannerDoctor.png" alt="Doctor with stethoscope"
+                            class="absolute bottom-0 right-0 w-full h-full object-contain object-bottom" />
+                        <div class="absolute top-8 left-8 w-16 h-16  flex items-center justify-center">
+                            <img src="./Image/EyeDocHero.png" alt="Eye illustration"
+                                class="w-full h-full object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Icon -->
+            <div
+                class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white h-20 w-10 flex items-center justify-center border border-blue-200 rounded-full">
+                <a href="#services" class=""><svg class="w-9 h-9 text-blue-500 animate-bounce" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+    <!-- END OF HERO SECTION  -->
+
+    <!-- BEGINING OF SERVICE SECTION  -->
+    <section class="py-16 px-4 md:py-24 overflow-hidden Service min-h-auto" id="services">
+        <div class="py-16 px-4 md:px-8 lg:px-12">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-2">
+                    <span class="text-[#0088CC]">Services</span>
+                    <span class="text-gray-500">We Provide</span>
+                </h2>
+                <p class="text-gray-400 text-center mb-12">
+                    A cataract is a clouding of the lens inside
+                </p>
+
+                <div class="service-slider">
+                    <!-- Pediatric -->
+                    <div class="px-4">
+                        <div class="bg-white rounded-3xl p-8 h-full border border-gray-200">
+                            <div class="bg-[#E6F4FA] rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#0088CC]" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Pediatric</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A cataract is a clouding of lens inside the eye cataract is the printing and ty Lorem
+                                cataract is a clouding ofa clouding of lens inside the eyecatar
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Oculoplasty -->
+                    <div class="px-4">
+                        <div class="bg-white rounded-3xl p-8 h-full  border border-gray-200">
+                            <div class="bg-[#E6F4FA] rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#0088CC]" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Oculoplasty</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A cataract is a clouding of lens inside the eye cataract is the printing and ty Lorem
+                                cataract is a clouding ofa clouding of lens inside the eyecatar
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Glaucoma -->
+                    <div class="px-4">
+                        <div class="bg-white rounded-3xl p-8 h-full  border border-gray-200">
+                            <div class="bg-[#E6F4FA] rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#0088CC]" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Glaucoma</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A cataract is a clouding of lens inside the eye cataract is the printing and ty Lorem
+                                cataract is a clouding ofa clouding of lens inside the eyecatar
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Retina -->
+                    <div class="px-4">
+                        <div class="bg-white rounded-3xl p-8 h-full  border border-gray-200">
+                            <div class="bg-[#E6F4FA] rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#0088CC]" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Retina</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A cataract is a clouding of lens inside the eye cataract is the printing and ty Lorem
+                                cataract is a clouding ofa clouding of lens inside the eyecatar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SERVICE SECTION -->
+
+    <!-- BEGINING OF ABOUT US SECTION -->
+    <section class="py-16 px-4 md:py-24 overflow-hidden AboutUs min-h-auto">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="relative grid grid-cols-6 gap-4 md:gap-6">
+                    <div class="col-span-3 flex justify-center relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/professionalDocAboutusSec.png" alt="Professional Doctors"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span
+                                    class="text-sm lg:text-xl md:text-xl text-wrap font-medium text-white">Professional
+                                    Doctors</span>
+                            </div>
+                        </div>
+                        <div class="blue-circle absolute "></div>
+                    </div>
+                    <div class="col-span-3 flex justify-center mt-6 sm:mt-12 relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/eyedroDocAboutusSec.png" alt="24/7 Patient Support"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span class="text-sm lg:text-xl md:text-xl text-wrap font-medium text-white">24/7
+                                    Patient Support</span>
+                            </div>
+                        </div>
+                        <div class="blue-rectangle absolute "></div>
+                    </div>
+                    <div class="col-span-3 flex justify-center mt-6 relative">
+                        <div
+                            class="feature-card bg-white rounded-xl shadow-md w-full max-w-[240px] h-[175px] overflow-hidden ">
+                            <div class="icon-box h-[115px] flex items-center justify-center">
+                                <img src="./Image/personalcareDocAboutusSec.png" alt="Personal Care"
+                                    class="w-16 h-16" />
+                            </div>
+                            <div class="label-box label-bg text-center flex items-center justify-center">
+                                <span class="text-sm lg:text-xl md:text-xl font-medium text-white">Personal Care</span>
+                            </div>
+                        </div>
+                        <div class="triangle-pattern absolute w-32 h-32"><img src="./Image/triangle-pattern.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-5xl font-bold">
+                        <span class="text-blue-500">About</span> us
+                    </h2>
+                    <h3 class="text-gray-500 font-bold text-lg">
+                        A cataract is a clouding of the lens inside
+                    </h3>
+                    <div class="w-10 h-1 bg-black"></div>
+                    <h3 class="text-lg md:text-2xl font-bold text-gray-800">
+                        Lorem Ipsum has been the industry's standard
+                    </h3>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed text-wrap">
+                        Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy
+                        text of the printing and tyLorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standarrem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's stad dummy text.
+                    </p>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed text-wrap">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md transition-colors duration-200">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ABOUT US SECTION -->
+
+    <!-- BEGINING OF ASSURITY SECTION -->
+    <section class="py-16 px-4 md:py-24 Asscurity min-h-auto">
+        <div class="container">
+
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    <span class="text-gray-600">Why you should </span>
+                    <span class="text-blue-500 underline-decoration">trust</span>
+                    <span class="text-gray-600">us?</span>
+                </h2>
+                <p class="text-gray-500">A cataract is a clouding of the lens inside</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                    <h3 class="text-2xl text-black font-bold">
+                        Lorem Ipsum has been the industry's standard
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply printing dummy text of
+                        the printing and tyLorem Ipsum is simply dummy text of the printing text and typesetting
+                        industry. Lorem ndarrem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's stad dummy text.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="checkmark-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.754 0.97955L5.40635 7.52095L3.31895 5.55065C2.56749 4.84134 1.39855 4.84134 0.647092 5.55065C-0.104369 6.25996 -0.104369 7.36333 0.647092 8.07264L3.65294 10.9099C4.07042 11.3039 4.65489 11.5404 5.32285 11.5404C5.82383 11.5404 6.4083 11.3827 6.82577 11.0675C6.90927 11.0675 6.90927 10.9887 6.99277 10.9887L15.3423 3.58035C16.0938 2.87104 16.0938 1.76767 15.4258 1.05836C14.6744 0.270242 13.5054 0.270242 12.754 0.97955Z"
+                                        fill="#017CC7" />
+                                </svg>
+                            </div>
+                            <span class="text-gray-500">Lorem Ipsum has been the industry's standard dummy</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="bg-blue-500 text-white px-8 py-3 rounded-md hover:bg-blue-600 transition-colors duration-200">
+                        Book Appointment
+                    </button>
+                </div>
+
+                <div class="space-y-8 mt-12">
+                    <div>
+                        <img src="./Image/trust.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF ASSURITY SECTION -->
+
+    <!-- BEGINNING OF OUR TEAM -->
+    <section class="py-16 px-4 md:py-24 container">
+        <div class="mx-auto overflow-x-hidden">
+
+            <div class="relative mb-16 text-center">
+                <h1 class="text-4xl font-bold md:text-5xl">
+                    <span class="text-black">Our</span>
+                    <span class="text-sky-500">team</span>
+                    <span class="text-black">of Doctors</span>
+                </h1>
+                <p class="mt-4 text-gray-500">A cataract is a clouding of the lens inside</p>
+                <div class="mt-4 h-0.5 w-24 bg-sky-500 mx-auto"></div>
+            </div>
+
+
+            <div class="pt-12 p-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center bg-[#f1f5f9]">
+
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-white">
+                                    <img src="./Image/DrShaileshAgrawal.png" alt="Dr. Shailesh Agrawal"
+                                        class="w-full h-full object-cover" />
+                                </div>
+
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">Dr. Shailesh Agrawal</h3>
+                                    <p class="text-black text-sm">M.S (Ophthalmology) Gold Medalist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-sky-100">
+                                    <img src="./Image/DrNitinJain.png" alt="Dr. Khushboo Patel"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">Dr. Khushboo Patel</h3>
+                                    <p class="text-black text-sm">Vitreo Retina Surgeon & ROP Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-pink-50">
+                                    <img src="./Image/DrNitinJain.png" alt="Dr. Nitin Jain"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">Dr. Nitin Jain</h3>
+                                    <p class="text-black text-sm">MS,FAEH (Opthalmology)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-gray-100">
+                                    <img src="./Image/DrSaurinGandhi.png" alt="Dr. Saurin Gandhi"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">Dr. Saurin Gandhi</h3>
+                                    <p class="text-black text-sm">DNB - Ophthalmology, MNAMS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="swiper-pagination"></div>
+                    <div class="flex justify-center swiper-button-our-team">
+                        <div class="swiper-button-next-our"></div>
+                        <div class="swiper-button-prev-our"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF OUR TEAM -->
+
+    <!-- BEGINING OF WORLDWIDE SECTION  -->
+    <section class="stats-bg py-16 px-4 md:py-24 Worldwide min-h-auto">
+
+        <div class="cross-pattern"></div>
+        <div class="circle-pattern"></div>
+        <div class="grid-lines"></div>
+
+
+        <div class="relative mx-auto px-4">
+            <div class="flex justify-center w-full gap-6 mx-auto">
+                <div>
+
+                    <div class="flex flex-wrap justify-center">
+                        <div class="flex flex-wrap items-center gap-6  rounded-2xl p-6 text-center">
+                            <div class="text-start flex flex-wrap  items-center gap-4">
+                                <div class=" text-[2.5rem] font-bold text-white lg:text-5xl">
+                                    100<span class="text-sky-500">+</span>
+                                </div>
+                                <p class="text-xl text-white uppercase font-bold">Happy Clients</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-6  rounded-2xl p-6 text-center">
+                            <div class="text-start flex flex-wrap  items-center gap-4">
+                                <div class=" text-[2.5rem] font-bold text-white lg:text-5xl">
+                                    500<span class="text-sky-500">+</span>
+                                </div>
+                                <p class="text-xl text-white uppercase font-bold">Patient Everyday</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center">
+                        <div class="flex flex-wrap items-center gap-6  rounded-2xl p-6 text-center">
+                            <div class="text-start flex flex-wrap  items-center gap-4">
+                                <div class=" text-[2.5rem] font-bold text-white lg:text-5xl">
+                                    15<span class="text-sky-500">+</span>
+                                </div>
+                                <p class="text-xl text-white uppercase font-bold">Years of<br />Experience</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-6  rounded-2xl p-6 text-center">
+                            <div class="text-start flex flex-wrap  items-center gap-4">
+                                <div class=" text-[2.5rem] font-bold text-white lg:text-5xl">
+                                    25,000<span class="text-sky-500">+</span>
+                                </div>
+                                <p class="text-xl text-white uppercase font-bold">Daily<br />Conversions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF WORLDWIDE SECTION  -->
+
+    <!-- BEGINING OF FEEDBACK SECTION -->
+    <section class="py-16 px-4 md:py-24 Feedback">
+        <div class="mx-auto max-w-7xl">
+
+            <div class="relative mb-16 text-center">
+                <div class="relative inline-block">
+                    <img src="./Image/ArrowTestimonail.png" alt="" class="absolute -top-[-41px] -right-[-750px]" />
+                    <h1 class="text-4xl font-bold md:text-5xl">
+                        <span class="text-black">What our </span>
+                        <span class="text-sky-500">Patient says</span>
+                        <span class="text-black"> about us</span>
+                    </h1>
+                </div>
+                <p class="mt-4 text-gray-500">A cataract is a clouding of the lens inside</p>
+                <div class="mt-4 h-0.5 w-24 bg-sky-500 mx-auto"></div>
+            </div>
+
+
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <div class="flex flex-wrap items-center gap-4 mb-6">
+                                <img src="./Image/JohnCarter.png" alt="John Carter"
+                                    class="w-16 h-16 rounded-full object-cover" />
+                                <div>
+                                    <h3 class="text-sky-500 text-xl font-bold">John Carter</h3>
+                                    <div class="flex text-yellow-400">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">Working with Vision has been a game-changer for our business. Their
+                                strategies have led to significant growth and a boost in revenue.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <div class="flex flex-wrap items-center gap-4 mb-6">
+                                <img src="./Image/PeterPawl.png" alt="Peeter pawl"
+                                    class="w-16 h-16 rounded-full object-cover" />
+                                <div>
+                                    <h3 class="text-sky-500 text-xl font-bold">Peeter pawl</h3>
+                                    <div class="flex text-yellow-400">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">I'm extremely impressed with the level of expertise and dedication
+                                that the team at Vision brings to me. They consistently deliver great results.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <div class="flex flex-wrap items-center gap-4 mb-6">
+                                <img src="./Image/PeterPawl.png" alt="Peeter pawl"
+                                    class="w-16 h-16 rounded-full object-cover" />
+                                <div>
+                                    <h3 class="text-sky-500 text-xl font-bold">Peeter pawl</h3>
+                                    <div class="flex text-yellow-400">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">I'm extremely impressed with the level of expertise and dedication
+                                that the team at Vision brings to me. They consistently deliver great results.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg">
+                            <div class="flex flex-wrap items-center gap-4 mb-6">
+                                <img src="./Image/PeterPawl.png" alt="Peeter pawl"
+                                    class="w-16 h-16 rounded-full object-cover" />
+                                <div>
+                                    <h3 class="text-sky-500 text-xl font-bold">Peeter pawl</h3>
+                                    <div class="flex text-yellow-400">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">I'm extremely impressed with the level of expertise and dedication
+                                that the team at Vision brings to me. They consistently deliver great results.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FEEDBACK SECTION -->
+
+    <!-- BEGINING OF FAQ SECTION  -->
+    <section class="py-16 px-4 md:py-24 bg-[#f1f5f9]">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-bold md:text-5xl mb-4">
+                        <span class="text-gray-900">Frequently Asked </span>
+                        <span class="text-sky-500">Questions</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8">A cataract is a clouding of the lens inside</p>
+
+                    <div class="relative inline-block">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PpKh8znXbhRXVmEr4M4TmIVkvfPEbC.png"
+                            alt="Doctor with question mark" class="max-w-md mx-auto w-full" />
+                    </div>
+                </div>
+
+
+                <div class="space-y-4 w-full">
+
+                    <div class="accordion rounded-lg bg-white hover:bg-blue-50 transition-all">
+                        <button type="button"
+                            class="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center">
+                            <span class="mr-4">Are there any special discounts or promotions available during the
+                                event?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="arrow transition-all w-4 fill-current ml-auto shrink-0 -rotate-90"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="content px-6 invisible max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="text-sm text-gray-600">auctor purus, vitae dictum dolor sollicitudin vitae. Sed
+                                bibendum
+                                purus in efficitur consequat.</p>
+                        </div>
+                    </div>
+                    <div class="accordion rounded-lg bg-white hover:bg-blue-50 transition-all">
+                        <button type="button"
+                            class="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center">
+                            <span class="mr-4">Are there any special discounts or promotions available during the
+                                event?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="arrow transition-all w-4 fill-current ml-auto shrink-0 -rotate-90"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="content px-6 invisible max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="text-sm text-gray-600">auctor purus, vitae dictum dolor sollicitudin vitae. Sed
+                                bibendum
+                                purus in efficitur consequat.</p>
+                        </div>
+                    </div>
+                    <div class="accordion rounded-lg bg-white hover:bg-blue-50 transition-all">
+                        <button type="button"
+                            class="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center">
+                            <span class="mr-4">Are there any special discounts or promotions available during the
+                                event?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="arrow transition-all w-4 fill-current ml-auto shrink-0 -rotate-90"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="content px-6 invisible max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="text-sm text-gray-600">auctor purus, vitae dictum dolor sollicitudin vitae. Sed
+                                bibendum
+                                purus in efficitur consequat.</p>
+                        </div>
+                    </div>
+                    <div class="accordion rounded-lg bg-white hover:bg-blue-50 transition-all">
+                        <button type="button"
+                            class="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center">
+                            <span class="mr-4">Are there any special discounts or promotions available during the
+                                event?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="arrow transition-all w-4 fill-current ml-auto shrink-0 -rotate-90"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="content px-6 invisible max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="text-sm text-gray-600">auctor purus, vitae dictum dolor sollicitudin vitae. Sed
+                                bibendum
+                                purus in efficitur consequat.</p>
+                        </div>
+                    </div>
+                    <div class="accordion rounded-lg bg-white hover:bg-blue-50 transition-all">
+                        <button type="button"
+                            class="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center">
+                            <span class="mr-4">Are there any special discounts or promotions available during the
+                                event?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="arrow transition-all w-4 fill-current ml-auto shrink-0 -rotate-90"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div class="content px-6 invisible max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="text-sm text-gray-600">auctor purus, vitae dictum dolor sollicitudin vitae. Sed
+                                bibendum
+                                purus in efficitur consequat.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION  -->
+
+    <!-- BEGINING OF BLOGS SECTION  -->
+    <section class="py-16 px-4 md:py-24">
+        <div class="container mx-auto max-w-7xl">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold md:text-5xl mb-4">
+                    <span class="text-gray-400">Our latest </span>
+                    <span class="text-sky-500">Blogs</span>
+                </h2>
+                <p class="text-gray-500">A cataract is a clouding of the lens inside</p>
+                <div class="mt-4 h-0.5 w-24 bg-sky-500 mx-auto"></div>
+            </div>
+
+
+            <div class="swiper blog-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                            <img src="./Image/EyeCheckingDoc.png" alt="Eye examination"
+                                class="w-full h-64 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-sky-500 text-xl font-bold mb-3">
+                                    The sleep Doctor, Your Guide to Sleep
+                                </h3>
+                                <p class="text-gray-600 mb-4">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    unknown printer
+                                </p>
+                                <a href="#"
+                                    class="inline-flex items-center text-gray-900 font-semibold hover:text-sky-500 transition-colors">
+                                    Read More
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                            <img src="./Image/EyeCheckingDoc.png" alt="Eye examination"
+                                class="w-full h-64 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-sky-500 text-xl font-bold mb-3">
+                                    The sleep Doctor, Your Guide to Sleep
+                                </h3>
+                                <p class="text-gray-600 mb-4">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    unknown printer
+                                </p>
+                                <a href="#"
+                                    class="inline-flex items-center text-gray-900 font-semibold hover:text-sky-500 transition-colors">
+                                    Read More
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                            <img src="./Image/EyeCheckingDoc.png" alt="Eye examination"
+                                class="w-full h-64 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-sky-500 text-xl font-bold mb-3">
+                                    The sleep Doctor, Your Guide to Sleep
+                                </h3>
+                                <p class="text-gray-600 mb-4">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    unknown printer
+                                </p>
+                                <a href="#"
+                                    class="inline-flex items-center text-gray-900 font-semibold hover:text-sky-500 transition-colors">
+                                    Read More
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                            <img src="./Image/EyeCheckingDoc.png" alt="Eye examination"
+                                class="w-full h-64 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-sky-500 text-xl font-bold mb-3">
+                                    The sleep Doctor, Your Guide to Sleep
+                                </h3>
+                                <p class="text-gray-600 mb-4">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    unknown printer
+                                </p>
+                                <a href="#"
+                                    class="inline-flex items-center text-gray-900 font-semibold hover:text-sky-500 transition-colors">
+                                    Read More
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex gap-2 justify-center">
+                    <div class="swiper-button-prev-doc"></div>
+                    <div class="swiper-button-next-doc"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF BLOGS SECTION  -->
+
+      <!-- BEGINING OF FOOTER SECTION  -->
+      <div>
+        <div class=" ">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl relative z-10 transform translate-y-[60px]">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div>
+                            <h2 class="text-sky-500 text-2xl font-bold mb-2">Want to make appointment easily?</h2>
+                            <p class="text-gray-600 max-w-2xl">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the 1500s.</p>
+                        </div>
+                        <a href="#"
+                            class="bg-sky-500 text-white px-8 py-3 rounded-lg hover:bg-sky-600 transition-colors whitespace-nowrap">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-[#1e2937] text-white pt-20 pb-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            About Us
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-12 mb-4">
+                        <p class="text-gray-400 text-sm">
+                            Vision Eye Hospital was established specialized tertiary eye care services at affordable
+                            prices the city
+                            <a href="#" class="text-sky-500 hover:text-sky-400 ml-1">Read More...</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Pages
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Contact Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Blogs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Parle Point Branch
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <p class="text-gray-400 mb-3">Time : 9:30 AM to 6:00 PM</p>
+                        <a href="#" class="text-gray-400 hover:text-white inline-flex items-center group">
+                            <span class="border-b border-gray-400 group-hover:border-white">Get the Direction</span>
+                            <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Parvat Patiya Branch
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <p class="text-gray-400 mb-3">Time : 6:00 PM to 9:00 PM</p>
+                        <a href="#" class="text-gray-400 hover:text-white inline-flex items-center group">
+                            <span class="border-b border-gray-400 group-hover:border-white">Get the Direction</span>
+                            <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative ">
+                            Contact Us
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <div>
+                            <a href="tel:+919909905215"
+                                class="bg-gray-100 text-gray-900 px-6 py-3 rounded-lg inline-block mb-4 hover:bg-gray-200 transition-colors">
+                                +919909905215
+                            </a>
+                            <a href="mailto:info@visioneyehospital.net" class="text-gray-400 hover:text-white block">
+                                info@visioneyehospital.net
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-gray-700">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-gray-400 text-sm text-center md:text-left">
+                            Copyright © 2017 Vision Eye Hospital. Developed and Maintained by Sanskruti Technologies
+                        </p>
+                        <div class="flex gap-6">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="twitter.svg" alt="Twitter" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="instagram.svg" alt="Instagram" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="skype.svg" alt="Skype" class="w-5 h-5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute left-0 top-1/2 -translate-y-1/2">
+                <svg class="w-40 h-40 text-gray-800 opacity-10" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3M18 13H13V18H11V13H6V11H11V6H13V11H18V13Z" />
+                </svg>
+            </div>
+        </footer>
+    </div>
+    <!-- END OF FOOTER SECTION  -->
+
+
+    <!-- SCRIPT -->
+    <script src="./Js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // SERVICE SLICK
+        $(document).ready(function () {
+            $('.service-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 390,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+
+                ]
+            });
+        });
+        //Our Team Swiper
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-our",
+                prevEl: ".swiper-button-prev-our",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        //Testimonials Swiper
+        var swiper = new Swiper(".testimonials-slider", {
+            // loop: true, 
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 3000, 
+            //     disableOnInteraction: false, 
+            // },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+
+        // BLOGS SWIPPER
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper('.blog-slider', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-doc',
+                    prevEl: '.swiper-button-prev-doc',
+                },
+            });
+        });
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "2rem",
+                            lg: "4rem",
+                            xl: "5rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', "sans-serif"],
+                        josefin: ['"Josefin Sans"', "sans-serif"],
+                        antonio: ['"Antonio Fischer"', "cursive"],
+                        italiana: ['"Italiana"', "serif"],
+                    },
+                    backgroundImage: {
+                        "gradient-border":
+                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                    },
+                },
+            },
+        };
+    </script>
+</body>
+
+</html>

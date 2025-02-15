@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* HEADER CSS */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+    top: 12px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0ea5e9;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0ea5e9;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #0ea5e9;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* HERO-SECTION CSS */
+
+.hero-section {
+    background: rgba(241, 245, 249, 1);
+}
+
+
+/* MOBILE MENU CSS */
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu .block {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in animation for menu items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SERVICE SECTION CSS  */
+.service-slider .slick-prev {
+    left: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-next {
+    right: -40px;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-slider .slick-prev:before,
+.service-slider .slick-next:before {
+    color: #0088CC;
+    font-size: 24px;
+}
+
+.service-slider .slick-slide {
+    padding: 0 15px;
+}
+
+
+/* HERO-SECTION CSS */
+
+.hero-section {
+    background: rgba(241, 245, 249, 1);
+}
+
+/* ABOUT-US SECTION CSS */
+.AboutUs {
+    background-color: #f1f5f9;
+}
+
+.blue-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(14, 165, 233, 0.1);
+    z-index: 0;
+    left: -40px;
+    top: 85px;
+}
+
+.blue-rectangle {
+    width: 120px;
+    height: 60px;
+    border-radius: 15%;
+    background-color: rgba(14, 165, 233, 0.1);
+    z-index: 0;
+    left: 185px;
+    top: -30px;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.label-bg {
+    background-image: url(../Image/labelbg.png);
+    background-position: auto 0px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.triangle-pattern {
+    background-size: 12px 12px;
+    position: absolute;
+    right: 0;
+    left: 170px;
+    top: 110px;
+}
+
+/* ASSURITY SECTION CSS */
+.curved-container {
+    position: relative;
+    border-radius: 24px 0px 0px 0;
+    padding: 0.5rem;
+}
+
+
+.checkmark-icon {
+    width: 30px;
+    height: 30px;
+    background: rgba(14, 165, 233, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0ea5e9;
+    font-weight: bolder;
+}
+
+.doctor-avatars {
+    display: flex;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+}
+
+.doctor-avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -1rem;
+}
+
+/* OUR TEAM SECTION CSS */
+.curved-arrow {
+    position: absolute;
+    left: -60px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0284c7;
+    border-color: transparent transparent #0284c7 #0284c7;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 100%;
+}
+
+.curved-arrow::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #0284c7;
+    border-bottom: 2px solid #0284c7;
+    transform: rotate(-50deg);
+}
+
+.doctor-card {
+    transition: transform 0.2s ease-in-out;
+    background-color: #f1f5f9 !important;
+}
+
+.doctor-card:hover {
+    background-color: #d9f1ff !important;
+    transform: translateY(-5px);
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .swiper-slide {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 90% !important;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        width: 95% !important;
+        padding: 0.25rem;
+    }
+}
+
+
+.swiper {
+    padding-bottom: 40px !important;
+}
+
+.swiper-button-next-our,
+.swiper-button-prev-our {
+    position: absolute;
+    color: #0284c7;
+    background: rgba(255, 255, 255, 0.9);
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+    top: 412px !important;
+}
+
+.swiper-button-next-our:hover,
+.swiper-button-prev-our:hover {
+    background: #ffffff;
+    color: #fff;
+}
+
+.swiper-button-next-our::after,
+.swiper-button-prev-our::after {
+    font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #0284c7;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+}
+
+
+/* WORLDWIDE SECTION CSS */
+.stats-bg {
+    background-color: #171C2C;
+    position: relative;
+    overflow: hidden;
+}
+
+.cross-pattern {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.cross-pattern::before,
+.cross-pattern::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cross-pattern::before {
+    width: 50px;
+    height: 3px;
+    transform: rotate(45deg);
+}
+
+.cross-pattern::after {
+    width: 3px;
+    height: 50px;
+    transform: rotate(45deg);
+}
+
+.circle-pattern {
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.circle-pattern::before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border: 3px solid rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+}
+
+.grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 100px 100px;
+}
+
+/* FEEDBACK CSS  */
+.testimonials-slider {
+    padding: 20px 60px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px !important;
+    height: 50px !important;
+    background: #ffffff;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #0369a1;
+    transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.swiper-slide .bg-white {
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide .bg-white:hover {
+    transform: translateY(-5px);
+}
+
+.text-yellow-400 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* FAQ CSS  */
+
+.accordion {
+    border: 1px solid #e2e8f0;
+}
+
+.toggle-button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #f0f9ff;
+}
+
+.arrow {
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.accordion.open .content {
+    visibility: visible;
+    max-height: 300px;
+}
+
+.accordion.open .arrow {
+    transform: rotate(0deg);
+}
+
+.content {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, visibility 0.3s ease;
+}
+
+/* BLOG CSS */
+.blog-slider {
+    padding: 20px 60px;
+}
+
+.swiper-button-next-doc,
+.swiper-button-prev-doc {
+    width: 50px !important;
+    height: 50px !important;
+    background: #0284c7;
+    border-radius: 50%;
+    color: white !important;
+    transition: all 0.3s ease;
+    top: 520px !important;
+}
+
+.swiper-button-next-doc:hover,
+.swiper-button-prev-doc:hover {
+    background: #0369a1;
+    transform: scale(1.1);
+}
+
+.swiper-button-next-doc::after,
+.swiper-button-prev-doc::after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER CSS  */
+/* Custom hover effects */
+.group:hover .group-hover\:translate-x-1 {
+    transform: translateX(0.25rem);
+}
+
+/* Smooth transitions */
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Responsive container */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* Ensure footer is relative for absolute positioning of medical cross */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* BLOG PAGE CSS */
+.diagonal-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background: #f1f5f9;
+    transform: skewY(-2deg);
+    transform-origin: bottom left;
+}
+
+.background-pattern {
+    background-image: linear-gradient(45deg, #f8f9fa 25%, transparent 25%),
+        linear-gradient(-45deg, #f8f9fa 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #f8f9fa 75%),
+        linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+
+/* about page css */
+.bgpng {
+    background-image: url('/Image/bgpng.png');
+}
+
+.Background {
+    background-image: url('/Image/bgdoctor.png');
+    background-size: cover;
+    /* Ensure the background covers the container */
+    background-position: center;
+    position: relative;
+}
+
+.bg-pattern {
+    background-image: url('../Image/About.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* contact page css */
+
+.faq-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.faq-content.active {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 1rem 1.5rem;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-item.active {
+    background-color: #fff;
+}
+
+
+
+.shim-blue {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 155, 255, 0.7);
+}
+
+.shim-blue::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg,
+            rgb(0, 0, 0) 0,
+            /* Light blue shimmer */
+            rgba(0, 0, 0, 0.9) 50%,
+            rgb(0, 0, 0) 100%
+            /* Light blue shimmer */
+        );
+
+    animation: shimmer 2.5s ease-out infinite;
+    content: "";
+}

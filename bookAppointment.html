@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- FONT CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <!-- SLIDER CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <title> Book Appointment</title>
+</head>
+
+<body>
+     <!-- BEGINING OF HEADER  -->
+     <header class="border-b w-100 sticky top-0 bg-white z-50">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-10 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8">
+                    <li><a href="./index.html" class="nav-link  text-sm font-medium">Home</a></li>
+                    <li><a href="./about.html" class="nav-link text-sm font-medium">About Us</a></li>
+                    <li class="dropdown relative">
+                        <a href="./Service.html" class="nav-link text-sm font-medium flex items-center  p-0">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content mt-2 py-2 border border-gray-200">
+                            <a href="/services/eye-examination" class="block px-4 py-2 text-sm hover:bg-gray-100">Eye
+                                Examination</a>
+                            <a href="/services/contact-lens" class="block px-4 py-2 text-sm hover:bg-gray-100">Contact
+                                Lens Fitting</a>
+                            <a href="/services/vision-therapy" class="block px-4 py-2 text-sm hover:bg-gray-100">Vision
+                                Therapy</a>
+                        </div>
+                    </li>
+                    <li><a href="./Blog.html" class="nav-link text-sm font-medium">Blogs</a></li>
+                    <li><a href="./contactUs.html" class="nav-link text-sm font-medium">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Book Appointment Button -->
+            <a href="./bookAppointment.html"
+                class=" bg-[#017CC7] hover:bg-blue-600 lg:block md:block hidden text-white px-4 py-2 rounded-md text-sm font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16602 1.75H22.8327M2.16602 9.5H22.8327M13.791 17.25H22.8327" stroke="#1C2434"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-1">
+                <a href="./index.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Home</a>
+                <a href="./about.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">About Us</a>
+                <a href="./Service.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Services</a>
+                <a href="./Blog.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Blogs</a>
+                <a href="./contactUs.html" class="block px-3 py-2 text-base font-medium hover:bg-gray-100">Contact Us</a>
+                <a href="./bookAppointment.html"
+                    class=" bg-[#017CC7] hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+    <!-- hero -->
+    <div class="min-h-[300px] bg-pattern relative ">
+        <div class="bgpng z-10  opacity-0.5">
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                <div class="max-w-4xl mx-auto text-center">
+                    <!-- Label -->
+                    <div class="w-full  mb-4   flex justify-center items-center text-white text-lg">
+                        <div class="text-sm text-white font-medium bg-[#017CC7]  px-4 py-1 rounded-full">
+                            Book your Appointment now</div>
+                    </div>
+
+                    <!-- Heading Container -->
+                    <div class="relative inline-flex items-center justify-center">
+                        <!-- Left Plus -->
+                        <span class="absolute left-7 -top-2 text-blue-500 text-3xl font-semibold">+</span>
+
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 px-12">
+                            Book Appointment
+                        </h1>
+
+                        <!-- Right Plus -->
+                        <span class="absolute right-6 -bottom-2 text-blue-500 text-3xl font-semibold">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGINNING OF OUR TEAM -->
+    <section class="py-16 px-4 md:py-24 container">
+        <div class="mx-auto overflow-x-hidden">
+
+            <div class="relative mb-16 text-center">
+                <h1 class="text-4xl font-bold md:text-5xl">
+                    <span class="text-black">Our</span>
+                    <span class="text-sky-500">team</span>
+                    <span class="text-black">of Doctors</span>
+                </h1>
+                <p class="mt-4 text-gray-500">A cataract is a clouding of the lens inside</p>
+                <div class="mt-4 h-0.5 w-24 bg-sky-500 mx-auto"></div>
+            </div>
+
+
+            <div class="pt-12 p-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center bg-[#f1f5f9]">
+
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-white">
+                                    <img src="./Image/DrShaileshAgrawal.png" alt="Dr. Shailesh Agrawal"
+                                        class="w-full h-full object-cover" />
+                                </div>
+
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">
+                                        Dr. Shailesh Agrawal</h3>
+                                    <p class="text-black text-sm">M.S
+                                        (Ophthalmology) Gold Medalist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-sky-100">
+                                    <img src="./Image/DrNitinJain.png" alt="Dr. Khushboo Patel"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">
+                                        Dr. Khushboo Patel</h3>
+                                    <p class="text-black text-sm">Vitreo Retina
+                                        Surgeon & ROP Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-pink-50">
+                                    <img src="./Image/DrNitinJain.png" alt="Dr. Nitin Jain"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">
+                                        Dr. Nitin Jain</h3>
+                                    <p class="text-black text-sm">MS,FAEH
+                                        (Opthalmology)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-center">
+                            <div class="doctor-card rounded-xl bg-transparent p-6 text-center">
+                                <div class="relative mx-auto w-48 h-48 overflow-hidden rounded-full bg-gray-100">
+                                    <img src="./Image/DrSaurinGandhi.png" alt="Dr. Saurin Gandhi"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div
+                                    class="mx-auto mt-6 max-w-[250px] transform bg-white p-2 rounded-lg -translate-y-[-60px] border border-blue-200">
+                                    <h3 class="text-sky-500 text-xl font-bold mb-2">
+                                        Dr. Saurin Gandhi</h3>
+                                    <p class="text-black text-sm">DNB -
+                                        Ophthalmology, MNAMS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="swiper-pagination"></div>
+                    <div class="flex justify-center swiper-button-our-team">
+                        <div class="swiper-button-next-our"></div>
+                        <div class="swiper-button-prev-our"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF OUR TEAM -->
+
+    <!-- contact form -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gray-100/50 rounded-xl p-6 md:p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Left Column -->
+                    <div class="space-y-6">
+                        <div>
+                            <h1 class="text-2xl md:text-3xl font-bold mb-4">
+                                <span class="text-[#017CC7]">Book</span> your Appointment Now
+                            </h1>
+                            <p class="text-gray-600 mb-4">For more Query call on:</p>
+
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-[#017CC7]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span class="font-medium text-[#017CC7]">Parle Point:</span>
+                                    <span class="text-gray-600">+91 9909905212 / +91 9909905353</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-[#017CC7]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <span class="font-medium text-[#017CC7]">Parvat Patiya:</span>
+                                    <span class="text-gray-600">+91 9879209651</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative w-full aspect-square max-w-md mx-auto right-10   rounded-[100px] overflow-hidden ">
+                            <div class="absolute  top-10 right-">
+                                <div class="absolute inset-1 bg-blue-500 rounded-full"></div>
+                                <img src="./Image/bookformpng.png" alt="Doctor with Patient"
+                                    class="relative z-10 w-full h-full object-cover rounded-xl " />
+                                <div class="absolute inset-0 border-2 border-dashed border-blue-300 rounded-full -m-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Form -->
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Full Name -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Full Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" placeholder="Your Name here"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required />
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Your Email <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" placeholder="example@yourmail.com"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required />
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Phone <span class="text-red-500">*</span>
+                                </label>
+                                <input type="tel" placeholder="Your Number here"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required />
+                            </div>
+
+                            <!-- Hospital -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Hospital <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <select
+                                        class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none bg-white text-[#64748b]"
+                                        required>
+                                        <option value="" disabled selected>
+                                            Select Hospital Location
+                                        </option>
+                                        <option value="parle">Parle Point</option>
+                                        <option value="parvat">Parvat Patiya</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Preferred Date -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Preferred Date For Appointment
+                                </label>
+                                <input type="date"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#64748b]" />
+                            </div>
+
+                            <!-- Preferred Time -->
+                            <div>
+                                <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                    Preferred Time For Appointment
+                                </label>
+                                <div class="relative">
+                                    <select
+                                        class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none bg-white text-[#64748b]">
+                                        <option value="" disabled selected>Select Time</option>
+                                        <option value="morning">Morning</option>
+                                        <option value="afternoon">Afternoon</option>
+                                        <option value="evening">Evening</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label class="block text-sm font-medium text-[#017CC7] mb-1">
+                                Message
+                            </label>
+                            <textarea rows="4" placeholder="Hello there,I would like to talk about how to..."
+                                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="flex items-start gap-2">
+                            <input type="checkbox" id="consent" class="mt-1" required />
+                            <label for="consent" class="text-sm text-gray-600">
+                                I authorize ASG Eye Hospitals and its representatives to Call, SMS,
+                                Email or WhatsApp me about its products and offers. This consent
+                                overrides any registration for DNC / NDNC.
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full sm:w-auto px-8 py-3 bg-[#017CC7] text-white rounded-lg hover:bg-blue-600 transition-colors duration-200">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq -->
+    <section class="py-12 bg-[#F1F5F9] min-h-screen p-4 md:p-8 flex justify-center items-center mb-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-end">
+                <!-- Left Column -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold text-center md:text-left">
+                        Frequently Asked <span class="text-[#017CC7]">Questions</span>
+                    </h2>
+                    <p class="text-gray-600 text-sm text-center md:text-left">
+                        A cataract is a clouding of the lens inside
+                    </p>
+                    <div class="w-6 h-1 bg-black rounded-full mx-auto md:mx-0"></div>
+                    <div class="relative w-96 h-96 mx-auto">
+
+                        <img src="./Image/bookpng.png" alt="Medical Professional"
+                            class="relative z-10 w-full h-full object-contain" />
+
+                    </div>
+                </div>
+
+                <!-- Right Column - FAQ Items -->
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-100">
+                        <button class="w-full px-6 py-4 flex items-center justify-between text-left">
+                            <span class="font-medium text-gray-900">What Facilities you providing?</span>
+                            <svg class="w-5 h-5 text-blue-500 faq-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-gray-600">Lorem ipsum has been the industry's standard dummy text ever since
+                                the 1500s, unknown printer. Lorem ipsum has been team at Vision brings to me.
+                                Consistently deliver great results.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-100">
+                        <button class="w-full px-6 py-4 flex items-center justify-between text-left">
+                            <span class="font-medium text-gray-900">How can I book appointment?</span>
+                            <svg class="w-5 h-5 text-blue-500 faq-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-gray-600">You can easily book an appointment through our online booking
+                                system or by calling our reception desk. We offer flexible scheduling options to
+                                accommodate your needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-100">
+                        <button class="w-full px-6 py-4 flex items-center justify-between text-left">
+                            <span class="font-medium text-gray-900">How can I consult doctor online?</span>
+                            <svg class="w-5 h-5 text-blue-500 faq-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-gray-600">Our telemedicine platform allows for convenient online
+                                consultations. Schedule a virtual appointment through our secure portal for remote
+                                medical advice.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-100">
+                        <button class="w-full px-6 py-4 flex items-center justify-between text-left">
+                            <span class="font-medium text-gray-900">How much will cost for test?</span>
+                            <svg class="w-5 h-5 text-blue-500 faq-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-gray-600">Test costs vary depending on the type of examination needed.
+                                Contact our office for detailed pricing information and insurance coverage details.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-100">
+                        <button class="w-full px-6 py-4 flex items-center justify-between text-left">
+                            <span class="font-medium text-gray-900">How much will cost for test?</span>
+                            <svg class="w-5 h-5 text-blue-500 faq-icon" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content">
+                            <p class="text-gray-600">Test costs vary depending on the type of examination needed.
+                                Contact our office for detailed pricing information and insurance coverage details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    <!-- BEGINING OF FOOTER SECTION  -->
+    <div>
+        <div class=" ">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl relative z-10 transform translate-y-[60px]">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div>
+                            <h2 class="text-sky-500 text-2xl font-bold mb-2">Want to make
+                                appointment easily?</h2>
+                            <p class="text-gray-600 max-w-2xl">Lorem Ipsum is simply dummy
+                                text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since
+                                the 1500s.</p>
+                        </div>
+                        <a href="#"
+                            class="bg-sky-500 text-white px-8 py-3 rounded-lg hover:bg-sky-600 transition-colors whitespace-nowrap">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-[#1e2937] text-white pt-20 pb-8 relative">
+            <div class="container mx-auto px-4  z-0">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            About Us
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <img src="./Image/headerlogo.png" alt="Vision Logo" class="h-12 mb-4">
+                        <p class="text-gray-400 text-sm">
+                            Vision Eye Hospital was established specialized tertiary eye care services at affordable
+                            prices the city
+                            <a href="#" class="text-sky-500 hover:text-sky-400 ml-1">Read More...</a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Pages
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Contact Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white flex items-center gap-2 group">
+                                    <span class="text-sky-500 text-lg">+</span>
+                                    <span class="group-hover:translate-x-1 transition-transform">Blogs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Parle Point Branch
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <p class="text-gray-400 mb-3">Time : 9:30 AM to 6:00 PM</p>
+                        <a href="#" class="text-gray-400 hover:text-white inline-flex items-center group">
+                            <span class="border-b border-gray-400 group-hover:border-white">Get the Direction</span>
+                            <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative inline-block">
+                            Parvat Patiya Branch
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <p class="text-gray-400 mb-3">Time : 6:00 PM to 9:00 PM</p>
+                        <a href="#" class="text-gray-400 hover:text-white inline-flex items-center group">
+                            <span class="border-b border-gray-400 group-hover:border-white">Get the Direction</span>
+                            <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-6 relative ">
+                            Contact Us
+                            <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-sky-500"></span>
+                        </h3>
+                        <a href="tel:+919909905215"
+                            class="bg-gray-100 text-gray-900 px-6 py-3 rounded-lg inline-block mb-4 hover:bg-gray-200 transition-colors">
+                            +919909905215
+                        </a>
+                        <a href="mailto:info@visioneyehospital.net" class="text-gray-400 hover:text-white block">
+                            info@visioneyehospital.net
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-gray-700">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-gray-400 text-sm text-center md:text-left">
+                            Copyright © 2017 Vision Eye Hospital. Developed and Maintained by Sanskruti Technologies
+                        </p>
+                        <div class="flex gap-6">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="twitter.svg" alt="Twitter" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="instagram.svg" alt="Instagram" class="w-5 h-5">
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <img src="skype.svg" alt="Skype" class="w-5 h-5">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-[15px] top-[170px] z-10 -translate-y-1/2">
+
+                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.15"
+                        d="M69.1485 70.2192L69.1485 106.909L38.8429 106.909L38.8429 70.2192V69.2192H37.8429L1.15307 69.2192V38.9136L37.8429 38.9136H38.8429V37.9136L38.8429 1.22374L69.1485 1.22373L69.1485 37.9136L69.1485 38.9136L70.1485 38.9136L106.838 38.9136L106.838 69.2192L70.1485 69.2192L69.1485 69.2192L69.1485 70.2192Z"
+                        stroke="white" stroke-width="2" />
+                </svg>
+
+            </div>
+
+
+        </footer>
+    </div>
+    <!-- END OF FOOTER SECTION  -->
+
+    <!-- SCRIPT -->
+    <script src="./Js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        //Our Team Swiper
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-our",
+                prevEl: ".swiper-button-prev-our",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "2rem",
+                            lg: "4rem",
+                            xl: "5rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', "sans-serif"],
+                        josefin: ['"Josefin Sans"', "sans-serif"],
+                        antonio: ['"Antonio Fischer"', "cursive"],
+                        italiana: ['"Italiana"', "serif"],
+                    },
+                    backgroundImage: {
+                        "gradient-border":
+                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- faqscript -->
+    <script>
+        // Improved FAQ functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const button = item.querySelector('button');
+            const content = item.querySelector('.faq-content');
+
+            button.addEventListener('click', () => {
+                // Get current state
+                const isActive = item.classList.contains('active');
+
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-content').classList.remove('active');
+                });
+
+                // If current item wasn't active, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                    content.classList.add('active');
+                }
+            });
+        });
+
+        // Open first FAQ item by default
+        document.querySelector('.faq-item').classList.add('active');
+        document.querySelector('.faq-content').classList.add('active');
+    </script>
+</body>
+
+</html>

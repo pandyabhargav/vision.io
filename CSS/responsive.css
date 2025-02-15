@@ -1,0 +1,92 @@
+/* HEADER CSS */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .blue-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ABOUT-US SECTION CSS */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .blue-rectangle {
+        width: 120px;
+        height: 60px;
+        left: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .triangle-pattern {
+        background-size: 8px 8px;
+        left: 120px;
+        top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .triangle-pattern {
+        background-size: 6px 6px;
+        left: 50px;
+        top: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    .toggle-button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .arrow {
+        width: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 640px) {
+    .blog-slider {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .blog-slider {
+        padding: 15px 40px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .blog-slider {
+        padding: 20px 60px;
+    }
+}
